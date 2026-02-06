@@ -39,6 +39,7 @@ header {
 .navbar-nav a:hover {
    color: rgb(165, 71, 44);
 }
+
 /* responsive */
 .nav-toggle span {
    width: 35px;
@@ -76,20 +77,27 @@ header {
 
 .nav2-mobile {
    position: fixed;
-   
    background: rgb(233, 202, 179);
    right: 0;
    top: 0;
    width: 50%;
-   display: none;
+   right: -100vw;
    align-items: center;
    justify-content: center;
    z-index: 2;
+   transition: 0.3s ease-in;
+   opacity: 0;
+   visibility: hidden;
+   height: 100vh;
+   display: flex;
+   align-items: center;
 }
-.nav-ul-mobile li{
+
+.nav-ul-mobile li {
    list-style: none;
    padding: 20px;
 }
+
 /* herosection */
 #hero {
    width: 90%;
@@ -167,8 +175,9 @@ header {
    right: 37px;
    bottom: 0;
 }
-.icons li img:hover{
-    transform: scale(1.3);
+
+.icons li img:hover {
+   transform: scale(1.3);
    transition: 0.5s ease all;
 }
 
@@ -207,6 +216,7 @@ header {
 .highlight h6 {
    margin: 0;
 }
+
 .content h2 {
    font-size: 44px;
    font-weight: 600;
@@ -220,6 +230,7 @@ header {
    max-width: 700px;
    margin: 0 auto;
 }
+
 .btn {
    padding: 12px 30px;
    background: rgb(233, 202, 179);
@@ -403,10 +414,12 @@ header {
    transform: scale(1.3);
    transition: 0.5s ease all;
 }
-.designtools img:hover{
+
+.designtools img:hover {
    transform: scale(1.3);
    transition: 0.5s ease all;
 }
+
 /* contactsection */
 .contactbox {
    border: solid 2px rgb(189, 189, 189);
