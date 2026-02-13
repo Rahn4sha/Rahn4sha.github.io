@@ -5,6 +5,7 @@
         width: 50%;
     }
 
+
 }
 
 @media screen and (max-width:992px) {
@@ -53,6 +54,12 @@
         width: 50%;
         opacity: 1;
         visibility: visible;
+    }
+    /* footer */
+    .ftr-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
     }
 }
 

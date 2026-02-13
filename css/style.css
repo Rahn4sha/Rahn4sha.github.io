@@ -256,6 +256,7 @@ header {
 
 .service-head {
    text-align: center;
+   margin-bottom: 45px;
 }
 
 .service-head p {
@@ -269,8 +270,8 @@ header {
    border: solid 1px rgb(189, 189, 189);
    border-radius: 15px;
    padding: 20px;
-   transition: 0.5s all;
    height: 100%;
+   transition: 0.5s all;
 }
 
 .service-card p {
@@ -287,7 +288,7 @@ header {
 
 .service-card:hover {
    background: rgb(243, 237, 231);
-   border: none;
+   border: solid 1px  rgb(243, 237, 231);
 }
 
 /* projectsection */
@@ -303,6 +304,7 @@ header {
 /* skillsection */
 .skills-head {
    text-align: center;
+   margin-bottom: 45px;
 }
 
 .skills-head h2 {
@@ -493,18 +495,31 @@ footer {
    background: rgb(243, 237, 231);
    padding: 60px 0;
 }
-
-footer p {
+footer h4{
+   font-family: "Cormorant Infant", serif;
+   font-size: 28px;
+   margin-top: 20px;
+   font-weight: 600;
+   letter-spacing: 0.5px;
+   
+}
+.ftr-middle p {
    font-size: 14px;
    font-weight: 300;
+   margin-top: 15px;
+   
+   
 }
-
+.ftr-buttons{
+   margin-top: 35px;
+   
+   
+}
 footer h5 {
    font-weight: 600;
    margin-bottom: 15px;
    margin-top: 25px;
 }
-
 .footer-links {
    list-style: none;
    padding: 0;
@@ -523,6 +538,9 @@ footer h5 {
 
 .contact {
    padding: 5px 0;
+   display: flex;
+   align-items: center;
+   gap: 10px;
 }
 
 .contact-details a {
@@ -539,9 +557,9 @@ footer h5 {
 .links {
    display: flex;
    flex-direction: row;
-   gap: 15px;
+   gap: 18px;
    padding: 5px;
-   margin-top: 10px;
+   margin-top: 12px;
 }
 
 .ftr-bottom {
