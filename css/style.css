@@ -1,10 +1,14 @@
 section {
-   margin: 90px;
+   margin: 90px 0;
+}
+html{
+   overflow: visible !important;
 }
 
 body {
    font-family: "Poppins", sans-serif;
    background: rgb(234, 222, 213);
+   overflow-x: hidden !important;
 }
 
 header {
@@ -107,7 +111,14 @@ header {
    justify-content: space-between;
    position: relative;
 }
-
+.hero-banner{
+   display: flex;
+   align-items: center;
+}
+.hero-banner img{
+   width: 100%;
+   max-width: 450px;
+}
 .hero-content {
    margin-top: 55px;
 }
@@ -267,11 +278,11 @@ header {
 }
 
 .service-card {
-   border: solid 1px rgb(189, 189, 189);
+   background: rgb(243, 237, 231);
    border-radius: 15px;
    padding: 20px;
    height: 100%;
-   transition: 0.5s all;
+   
 }
 
 .service-card p {
@@ -286,21 +297,24 @@ header {
    font-weight: 600;
 }
 
-.service-card:hover {
-   background: rgb(243, 237, 231);
-   border: solid 1px  rgb(243, 237, 231);
-}
 
 /* projectsection */
 .projects-head {
-   text-align: center;
+   margin: 0 auto;
+   width: max-content;
 }
 
 .projects-head h2 {
    font-size: 44px;
    font-weight: 600;
 }
+.sub-head{
+   border-left: solid 3px;
+   padding-left: 10px;
+   height: 18px;
+   width: 3px;
 
+}
 /* skillsection */
 .skills-head {
    text-align: center;
