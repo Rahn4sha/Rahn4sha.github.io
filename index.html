@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"
         integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
@@ -156,7 +160,8 @@
                             <p>
                                 I’m a UI/UX designer focused on creating intuitive and user-centered digital experiences
                                 for web and mobile platforms.My design process involves understanding user needs,
-                                structuring information through wireframes, and delivering high-fidelity interfaces and interactive prototypes using
+                                structuring information through wireframes, and delivering high-fidelity interfaces and
+                                interactive prototypes using
                                 Figma.With practical knowledge of HTML, CSS, and Bootstrap, I design interfaces that
                                 align closely with development requirements and ensure smooth handoff to developers
                             </p>
@@ -171,7 +176,7 @@
     <section id="services">
         <div class="container">
             <div class="myservices">
-                <div class="service-head">
+                <div class="service-head" data-aos="fade-down">
                     <h2>Design Expertise</h2>
                     <p>Designing user-centered interfaces focused on usability, accessibility, and
                         business goals.</p>
@@ -215,11 +220,37 @@
     </section>
     <section id="projects">
         <div class="container">
-            <div class="projects-head">
+            <div class="projects-head" data-aos="fade-down">
                 <div class="sub-head">Works</div>
                 <h2>My latest works</h2>
             </div>
-            
+            <div class="your-class">
+                <div class="slide">
+                    <img src="img/cakestudiomockup.png" alt="">
+                    <div class="work-visit">
+                        <a href="cakestudio">Visit</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/reenmockup.png" alt="">
+                    <div class="work-visit">
+                        <a href="reen">Visit</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/racemockup.png" alt="">
+                    <div class="work-visit">
+                        <a href="racelogistcs">Visit</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/reenmockup.png" alt="">
+                    <div class="work-visit">
+                        <a href="reen">Visit</a>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </section>
@@ -227,7 +258,7 @@
 
     <section id="skills">
         <div class="container">
-            <div class="skills-head">
+            <div class="skills-head" data-aos="fade-down">
                 <h2>Skills & Tools</h2>
                 <p>Skills empower us to excel in our endeavors, Unlocking doors to new opportunities and paving the path
                     of success.
@@ -239,13 +270,13 @@
             </div>
             <div class="row g-2">
                 <div class="col-md-6">
-                    <div class="designtools">
+                    <div class="designtools"data-aos="fade-up">
                         <img src="img/Figma.png" alt="">
                         <h4>Figma</h4>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="designtools">
+                    <div class="designtools"data-aos="fade-up">
                         <img src="img/affinity.png" alt="">
                         <h4>Affinity</h4>
                     </div>
@@ -254,23 +285,23 @@
             <div class="tools-section">
                 <h3 class="skills-title">Development Tools</h3>
                 <div class="tools">
-                    <div class="tool">
+                    <div class="tool"data-aos="fade-up">
                         <img src="img/Html.png" alt="">
                         <h4>HTML</h4>
                     </div>
-                    <div class="tool">
+                    <div class="tool"data-aos="fade-up">
                         <img src="img/css.png" alt="">
                         <h4>CSS</h4>
                     </div>
-                    <div class="tool">
+                    <div class="tool"data-aos="fade-up">
                         <img src="img/javascript.png" alt="">
                         <h4>JavaScript</h4>
                     </div>
-                    <div class="tool">
+                    <div class="tool"data-aos="fade-up">
                         <img src="img/bootstrap.png" alt="">
                         <h4>Bootstrap</h4>
                     </div>
-                    <div class="tool">
+                    <div class="tool"data-aos="fade-up">
                         <img src="img/github.png" alt="">
                         <h4>Github</h4>
                     </div>
@@ -354,7 +385,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="col-md-2">
                     <div class="ftr-right">
                         <h5>Contact</h5>
@@ -421,6 +452,51 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"
         integrity="sha512-RmCE+nEdKZ45TpbCJgvYvfEDz3XaiGmTTJl6GfyITW3fouks4lNTOkoMXWJ9WA6aQO+3FV8cjA6fvTosOgbCrg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('.your-class').slick({
+                autoplay: true,
+                slidesToShow: 3,
+                speed: 2000,
+                autoPlaySpeed: 1000,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-right arrow"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-left arrow"></i></button>',
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 1024, // Screen size up to 1024px
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: false,
+                        }
+                    },
+                    {
+                        breakpoint: 600, // Screen size up to 600px
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            //arrows: false // Hide arrows on small screens
+                        }
+                    },
+                    {
+                        breakpoint: 480, // Screen size up to 480px
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: false, // Hide dots on very small screens
+                            autoplay: false // Disable autoplay on very small screens
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
 
     <script>
         AOS.init();
