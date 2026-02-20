@@ -81,6 +81,17 @@
 
 @media screen and (max-width:525px) {}
 
-@media screen and (max-width:425px) {}
+@media screen and (max-width:425px) {
+    /* btnsize */
+    .buttons a{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 15px;
+    }
+    .ftr-buttons a{
+        font-size: 15px;
+    }
+}
 
 @media screen and (max-width:375px) {}
