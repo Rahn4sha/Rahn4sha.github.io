@@ -423,14 +423,9 @@ header {
 .designtools h4 {
    padding: 20px;
 }
-.d-tools{
-   overflow-y: visible;
-   overflow-x: hidden;
-}
+
 .tools-section {
    margin-top: 40px;
-   overflow-y: visible;
-   overflow-x: hidden;
 }
 
 .tools {
