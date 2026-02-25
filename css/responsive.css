@@ -1,0 +1,100 @@
+@media screen and (max-width:1400px) {}
+
+@media screen and (max-width:1200px) {
+    .skills-title {
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (max-width:992px) {
+    .hero-content h1 {
+        font-size: 49px;
+        line-height: 40px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .service-card h3 {
+        font-size: 26px;
+    }
+
+    .skills-title::before {
+        width: 200px;
+        left: -200px;
+    }
+
+    .skills-title::after {
+        width: 200px;
+        right: -200px;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .nav-toggle span {
+        display: flex;
+        z-index: 3;
+    }
+
+    .nav {
+        display: flex;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .menu {
+        right: 0;
+        height: 100vh;
+        width: 50%;
+        opacity: 1;
+        visibility: visible;
+    }
+    /* footer */
+    .ftr-buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .tools {
+        flex-wrap: wrap;
+    }
+
+    .tool {
+        width: 44%;
+    }
+
+    .contactbox {
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width:576px) {}
+
+@media screen and (max-width:525px) {}
+
+@media screen and (max-width:425px) {
+    .hero-content{
+        margin-top: 0;
+    }
+    /* btnsize */
+    .buttons a{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 15px;
+    }
+    .ftr-buttons a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:375px) {}

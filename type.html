@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         /* *******typewriter********* */
+.blue{
+  /* -webkit-text-fill-color: transparent; */
+  /* -webkit-background-clip: text !important; */
+  /* background: var(--clr-icons); */
+}
+.hero-text {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+}
+@media(min-width:768px){
+  .hero-text{
+    padding-top: 50px;
+  }
+}
+.hero-text .fw-normal{
+    font-size: 17px;
+    margin: 0;
+}
+.hero-text p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: left;
+    overflow: hidden;
+    margin: 0;
+    margin-top: -10px;
+}
+.hero-text p:first-child{
+    font-weight: 800;
+}
+.hero-text p span.typed-text {
+  font-weight: normal;
+  /* color: #dd7732; */
+  /* color: hsl(333deg, 100%, 52%); */
+  /* -webkit-text-fill-color: transparent; */
+  -webkit-background-clip: text !important;
+  /* background-clip: border-box; */
+  /* background: var(--clr-hero); */
+  font-weight: 600;
+}
+.hero-text p span.cursor {
+  display: inline-block;
+  /* background-color: var(--bg-cursor); */
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.hero-text p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+.get-in-touch-items-wrapper{
+  padding:50px 50px 50px 0;
+  display: inline-block;
+  /* background-image: url(../img/dark-gradient-home.svg); */
+  background-repeat: no-repeat;
+  background-position: top,left;
+  background-size: cover;
+}
+.get-in-touch-items{
+  display: flex ;
+  flex-direction: column;
+}
+
+    </style>
+</head>
+<body>
+    <section id="home" class="section">
+    <div class="container wrap">
+        <div class="row">
+            
+    <!--  ************* typewriter  ******** -->
+
+            <div class="col-md-7 hero-data ">
+                <div class="hero-text">
+                    <h2 class="fw-normal p-0"><i>Hello There !</i></h2>
+                    <p class="p-0">I Am Ameen.</p>
+                    <p class="p-0"><span class="blue">A </span><span class="typed-text"></span><span class="cursor typing">&nbsp;</span></p>
+                </div>
+
+     <!--  ********** social-icons  ******** -->
+
+                <div class=" mt-4">
+                    <div>
+                        <div class="contact-bt mb-2 ">
+                            Find me on 👇:
+                         </div>
+                         <div class="social">
+                            <a href="https://stackoverflow.com/users/16637677/radioactivein" target="_blank" aria-label="social-links">
+                                <div class="social-block">
+                                    <span class="fa-brands fa-stack-overflow"></span>
+                                </div>
+                            </a>
+                            <a href="https://gitlab.com/radioactivein" target="_blank" aria-label="social-links">
+                                <div class="social-block">
+                                    <span class="fa-brands fa-gitlab"></span>
+                                </div>
+                            </a>
+                            <a href="https://github.com/radioactivein" target="_blank" aria-label="social-links">
+                                <div class="social-block">
+                                    <span class="fa-brands fa-github"></span>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/al.ameen__/" target="_blank" aria-label="social-links">
+                                <div class="social-block">
+                                    <span class="fa-brands fa-instagram"></span>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/al-ameen-703ab4236/" target="_blank" aria-label="social-links">
+                                <div class="social-block">
+                                    <span class="fa-brands fa-linkedin-in"></span>
+                                </div>
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+    <!--  ***** profile-image  **** -->
+
+            <div class="col-md-5 ">
+                <div class="profile-image mt-4">
+                    <!-- <img src="img/pictures/Group 158.png"  alt="profile-image"> -->
+                </div>
+            </div>      
+        </div>
+    </div>
+</section>
+
+
+<script>
+    const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["UX / UI Designer.", "Web Developer.", "Web Designer."];
+const typingDelay = 100;
+const erasingDelay = 80;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+  	setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+	if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+</script>
+</body>
+</html>
