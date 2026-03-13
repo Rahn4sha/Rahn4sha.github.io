@@ -135,7 +135,7 @@
     </section>
 
 
-    
+
 
     <section id="about">
         <div class="container">
@@ -233,25 +233,25 @@
                 <div class="slide">
                     <img src="img/cakestudiomockup.png" alt="">
                     <div class="work-visit">
-                        <a href="websites/cakestudio/index.html">Visit</a>
+                        <a href="website/cakestudio/index.html">Visit</a>
                     </div>
                 </div>
                 <div class="slide">
                     <img src="img/reenmockup.png" alt="">
                     <div class="work-visit">
-                        <a href="websites/reen/index.html">Visit</a>
+                        <a href="website/reen/index.html">Visit</a>
                     </div>
                 </div>
                 <div class="slide">
                     <img src="img/racemockup.png" alt="">
                     <div class="work-visit">
-                        <a href="websites/racelogistics/index.html">Visit</a>
+                        <a href="website/racelogistics/index.html">Visit</a>
                     </div>
                 </div>
                 <div class="slide">
                     <img src="img/reenmockup.png" alt="">
                     <div class="work-visit">
-                        <a href="websites/reen/css/responsive.css/">Visit</a>
+                        <a href="website/reen/index.html">Visit</a>
                     </div>
                 </div>
             </div>
@@ -270,14 +270,14 @@
             </div>
             <div class="d-tools">
                 <h3 class="skills-title">Design Tools</h3>
-                <div class="row g-2">
-                    <div class="col-md-6">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-3">
                         <div class="designtools" data-aos="fade-up">
                             <img src="img/Figma.png" alt="">
                             <h4 class="tool1">Figma</h4>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <div class="designtools" data-aos="fade-up">
                             <img src="img/affinity.png" alt="">
                             <h4 class="tool2">Affinity</h4>
@@ -522,6 +522,18 @@
                 $(".nav2-mobile").toggleClass("menu");
             })
         })
+    </script>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector(".header");
+
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
     </script>
 
 </body>

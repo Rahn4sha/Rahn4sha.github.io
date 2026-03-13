@@ -1,7 +1,8 @@
 section {
    margin: 90px 0;
 }
-html{
+
+html {
    overflow: visible !important;
 }
 
@@ -13,7 +14,11 @@ body {
 
 header {
    padding: 30px 0;
-
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
 }
 
 .header {
@@ -22,8 +27,16 @@ header {
    align-items: center;
    margin: auto;
    background: rgb(243, 237, 231);
+   border: solid 1px transparent;
    border-radius: 20px;
    padding: 25px 40px;
+   transition: all 0.3s ease;
+}
+
+.header.scrolled {
+   background: rgba(243, 237, 231, 0.3);
+   backdrop-filter: blur(10px);
+   border: 1px solid rgb(243, 237, 231);
 }
 
 .navbar-nav {
@@ -114,25 +127,28 @@ header {
    padding: 40px 0;
    min-width: 100vh;
    height: 100%;
-   margin-top: 60px;
+   margin-top: 15%;
 }
-.hero-banner{
+
+.hero-banner {
    display: flex;
    align-items: center;
 }
-.hero-banner img{
+
+.hero-banner img {
    width: 100%;
-   max-width: 400px;
-   
+   max-width: 380px;
+
 }
+
 .hero-content {
    margin-top: 55px;
 }
 
 .hero-content h1 {
    font-family: "Cormorant Infant", serif;
-   font-size: 60px;
-   line-height: 50px;
+   font-size: 50px;
+   line-height: 45px;
 }
 
 .hero-content span {
@@ -141,19 +157,20 @@ header {
 }
 
 .description {
-   font-size: 20px;
+   font-size: 17px;
    font-weight: 400;
    max-width: 700px;
    margin: 0 auto;
 
 }
 
-.buttons{
+.buttons {
    display: flex;
    gap: 15px;
    margin-top: 30px;
 }
-.buttons a{
+
+.buttons a {
    text-decoration: none;
    padding: 14px 28px;
    background: rgb(233, 202, 179);
@@ -164,11 +181,13 @@ header {
    border: solid 2px rgb(233, 202, 179);
    transition: all 0.3s ease;
 }
+
 .btn-1:hover,
-.btn-2:hover{
+.btn-2:hover {
    background: transparent;
    border: solid 2px rgb(233, 202, 179);
 }
+
 .icons li {
    list-style: none;
    margin-bottom: 25px;
@@ -179,6 +198,7 @@ header {
    right: 58px;
    bottom: 0;
 }
+
 .icons li img:hover {
    transform: scale(1.3);
    transition: 0.5s ease all;
@@ -273,9 +293,9 @@ header {
 .service-card {
    background: rgb(243, 237, 231);
    border-radius: 15px;
-   padding:30px 20px;
+   padding: 30px 20px;
    height: 100%;
-   
+
 }
 
 .service-card p {
@@ -302,14 +322,16 @@ header {
    font-size: 44px;
    font-weight: 600;
 }
-.sub-head{
+
+.sub-head {
    border-left: solid 3px;
    padding-left: 10px;
    height: 18px;
    width: 3px;
 
 }
-.slide img{
+
+.slide img {
    object-fit: cover;
    height: 100%;
    width: 100%;
@@ -317,10 +339,12 @@ header {
    border-radius: 15px;
    padding: 0 10px;
 }
-.your-class .slide{
+
+.your-class .slide {
    position: relative;
 }
-.slick-prev{
+
+.slick-prev {
    position: absolute;
    top: 100%;
    z-index: 100;
@@ -329,7 +353,8 @@ header {
    padding: 0 15px;
    color: inherit;
 }
-.slick-next{
+
+.slick-next {
    position: absolute;
    z-index: 100;
    border: none;
@@ -337,7 +362,8 @@ header {
    padding: 0;
    color: inherit;
 }
-.work-visit a{
+
+.work-visit a {
    text-decoration: none;
    font-weight: 300;
    font-size: 16px;
@@ -352,6 +378,7 @@ header {
    transform: translateX(-50%);
    transition: all 0.3s ease-out;
 }
+
 /* skillsection */
 .skills-head {
    text-align: center;
@@ -422,9 +449,11 @@ header {
 .designtools .tool1 {
    padding: 0 10px;
 }
-.designtools .tool2{
+
+.designtools .tool2 {
    padding: 0 22px;
 }
+
 .tools-section {
    margin-top: 40px;
 }
@@ -448,7 +477,7 @@ header {
 .tool {
    display: flex;
    flex-direction: column;
-   background:  rgb(243, 237, 231);
+   background: rgb(243, 237, 231);
    padding: 20px;
    border-radius: 20px;
    text-align: center;
@@ -548,27 +577,31 @@ footer {
    background: rgb(243, 237, 231);
    padding: 60px 0;
 }
-footer h4{
+
+footer h4 {
    font-family: "Cormorant Infant", serif;
    font-size: 28px;
    margin-top: 20px;
    font-weight: 600;
    letter-spacing: 0.5px;
-   
+
 }
+
 .ftr-middle p {
    font-size: 14px;
    font-weight: 300;
    margin-top: 15px;
-   
-   
+
+
 }
-.ftr-buttons{
+
+.ftr-buttons {
    display: flex;
    gap: 20px;
    margin-top: 35px;
 }
-.ftr-buttons a{
+
+.ftr-buttons a {
    text-decoration: none;
    padding: 14px 28px;
    background: rgb(233, 202, 179);
@@ -579,16 +612,19 @@ footer h4{
    border: solid 2px rgb(233, 202, 179);
    transition: all 0.3s ease;
 }
+
 .btn-1:hover,
-.btn-2:hover{
+.btn-2:hover {
    background: transparent;
    border: solid 2px rgb(233, 202, 179);
 }
+
 footer h5 {
    font-weight: 600;
    margin-bottom: 15px;
    margin-top: 25px;
 }
+
 .footer-links {
    list-style: none;
    padding: 0;
@@ -644,11 +680,11 @@ footer h5 {
 /* stickybuttons */
 .wapp-btn {
    bottom: 80px;
-   background:  rgb(241, 233, 226);
+   background: rgb(241, 233, 226);
 }
 
 .call-btn {
-   background:  rgb(241, 233, 226);
+   background: rgb(241, 233, 226);
    bottom: 17px;
 }
 
