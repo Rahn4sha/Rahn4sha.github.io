@@ -71,7 +71,9 @@
     }
 }
 
-@media screen and (max-width:576px) {}
+@media screen and (max-width:576px) {
+    
+}
 
 @media screen and (max-width:525px) {
     #skills h3{
@@ -80,9 +82,6 @@
 }
 
 @media screen and (max-width:425px) {
-    .hero-content{
-        margin-top: 0;
-    }
     /* btnsize */
     .buttons a{
         font-size: 15px;
