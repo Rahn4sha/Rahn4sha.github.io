@@ -125,7 +125,6 @@ header {
    justify-content: end;
    position: relative;
    padding: 40px 0;
-   min-width: 100vh;
    height: 100%;
    margin-top: 15%;
 }
