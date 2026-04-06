@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(25, 25, 25);
+    font-family: "Poppins", sans-serif;
+}
+h1{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    padding-top: 65px;
+    color: rgb(250, 220, 107);
+
+}
+.intro img{
+    padding-top: 20px;
+}
