@@ -83,16 +83,30 @@
     /* Make the lines flexible instead of 400px */
     .skills-title::before, 
     .skills-title::after {
-        width: 50px; /* Much smaller fixed width for mobile */
+        width: 40px !important; /* Much smaller fixed width for mobile */
     }
 
     .skills-title::before {
-        left: -55px; /* Adjust position to match new width */
+        left: -45px !important; /* Adjust position to match new width */
     }
 
     .skills-title::after {
-        right: -55px; /* Adjust position to match new width */
+        right: -45px !important; /* Adjust position to match new width */
     }
+    .designtools{
+        padding: 15px 10px;
+        width: 90%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .d-toolsection{
+        gap: 8px;
+    }
+    body, html{
+        overflow-x: hidden !important;
+        position: relative;
+    }
+    
 
     
 }
