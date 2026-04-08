@@ -72,13 +72,33 @@
 }
 
 @media screen and (max-width:576px) {
+    #skills h3{
+        font-size: 17px;
+    }
+    .skills-title {
+        width: 50% !important; 
+        margin: 20px auto;
+    }
+
+    /* Make the lines flexible instead of 400px */
+    .skills-title::before, 
+    .skills-title::after {
+        width: 50px; /* Much smaller fixed width for mobile */
+    }
+
+    .skills-title::before {
+        left: -55px; /* Adjust position to match new width */
+    }
+
+    .skills-title::after {
+        right: -55px; /* Adjust position to match new width */
+    }
+
     
 }
 
 @media screen and (max-width:525px) {
-    #skills h3{
-        font-size: 18px;
-    }
+    
 }
 
 @media screen and (max-width:425px) {
