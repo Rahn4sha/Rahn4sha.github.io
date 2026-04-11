@@ -204,13 +204,9 @@ header {
    transform: scale(1.3);
    transition: 0.5s ease all;
 }
-
-
-
-
 /* aboutsection */
 .aboutme {
-   background: rgb(241, 233, 226);
+   background: rgb(243, 237, 231);
    padding: 45px;
    border-radius: 35px;
 }
@@ -369,7 +365,7 @@ header {
    font-weight: 300;
    font-size: 16px;
    color: white;
-   background: rgb(165, 71, 44);
+   background: #9C5235;
    padding: 5px 25px;
    border-radius: 30px;
    position: absolute;
@@ -512,16 +508,32 @@ header {
    transition: 0.5s ease all;
 }
 
+.glass-card {
+   background: rgba(243, 237, 231, 0.4) !important;
+   backdrop-filter: blur(12px);
+   -webkit-backdrop-filter: blur(12px);
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
 /* contactsection */
+#contact {
+   background: #9C5235;
+   margin: 0;
+   padding: 100px 0;
+   color: white;
+}
+
 .contactbox {
-   border: solid 2px rgb(189, 189, 189);
-   border-radius: 40px;
-   padding: 70px 40px;
+   border: none;
+   padding: 0;
 }
 
 .contactbox p {
    font-size: 14px;
    font-weight: 300;
+   color: rgba(255, 255, 255, 0.9);
+   padding-top: 15px;
 }
 
 .contact-info {
@@ -529,7 +541,6 @@ header {
    flex-direction: column;
    gap: 15px;
    margin-top: 40px;
-
 }
 
 .info-item {
@@ -537,15 +548,16 @@ header {
    align-items: center;
    gap: 10px;
    font-size: 16px;
-
 }
 
 .info-item a {
    text-decoration: none;
-   color: black;
+   color: rgba(255, 255, 255, 0.9);
    font-size: 14px;
    font-weight: 300;
 }
+
+
 
 .input {
    display: flex;
@@ -555,29 +567,80 @@ header {
 input,
 textarea {
    width: 100%;
-   padding: 5px 0 5px 10px;
+   padding: 10px 15px;
    font-family: "Poppins", sans-serif;
-   font-size: 12px;
-   margin: 4px 0;
+   font-size: 14px;
+   margin: 6px 0;
    border-radius: 30px;
-   border: 1px solid rgb(189, 189, 189);
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   background: rgba(255, 255, 255, 0.1);
+   color: white;
    outline: none;
+   transition: border 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+   color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus,
+textarea:focus {
+   border-color: rgba(255, 255, 255, 0.8);
+   background: rgba(255, 255, 255, 0.15);
 }
 
 textarea {
    border-radius: 20px;
    height: 140px;
-   margin-bottom: 15px;
+   margin-bottom: 20px;
 }
 
+/* Magnetic Utility */
+.magnetic {
+    display: inline-block;
+    transition: transform 0.3s ease-out;
+}
+
+/* Liquid fill button */
 .submit-btn {
-   width: 100%;
-   padding: 15px;
-   border: none;
-   border-radius: 30px;
-   font-size: 15px;
-   background: rgb(165, 71, 44);
-   color: white;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    background: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+
+.submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    padding-bottom: 200%;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 40% 45% 50% 40%;
+    transition: top 0.6s ease;
+    z-index: -1;
+    animation: flow 4s infinite linear;
+}
+
+@keyframes flow {
+    0% { transform: translateX(-50%) rotate(0deg); }
+    100% { transform: translateX(-50%) rotate(360deg); }
+}
+
+.submit-btn:hover::before {
+    top: -50%;
 }
 
 /* footer */
