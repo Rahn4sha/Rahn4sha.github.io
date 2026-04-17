@@ -514,13 +514,12 @@
     </script>
     <script>
         $(document).ready(function () {
-            $("span").click(function () {
-                $(".nav-toggle").toggleClass("toggle");
-            })
-            $("span").click(function () {
+            $(".nav-toggle").click(function () {
+                $(this).toggleClass("toggle");
                 $(".nav2-mobile").toggleClass("menu");
-            })
-        })
+                $("header").toggleClass("remove-padding");
+            });
+        });
     </script>
 
     <script>
