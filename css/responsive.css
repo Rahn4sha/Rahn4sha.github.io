@@ -117,20 +117,6 @@
    
 }
 @media screen and (max-width: 425px) {
-    /* Hero section-u kooduthal space kittan */
-    #hero {
-        margin-top: 60px !important; 
-        padding: 0 15px !important;
-        height: auto !important;
-    }
-
-    /* Text break aavathe nirthan (H1 Fix) */
-    .hero-content h1 {
-        font-size: 30px !important; /* 50px-il ninnu kurachu */
-        line-height: 1.2 !important;
-        margin-bottom: 10px !important;
-    }
-
     /* Buttons ore line-il fit aakkan (Button Fix) */
     .buttons {
         display: flex !important;
@@ -146,19 +132,5 @@
         text-align: center;
         white-space: nowrap; /* Text thazhekkirangilla */
         border-radius: 12px !important;
-    }
-
-    /* Description nalla pole fit aavan */
-    .description {
-        font-size: 15px !important;
-        width: 100% !important;
-        margin-bottom: 20px !important;
-    }
-
-    /* Image overlap aavathe size adjust cheyyan */
-    .hero-banner img {
-        max-width: 280px !important;
-        height: auto !important;
-        margin-top: 25px;
     }
 }
