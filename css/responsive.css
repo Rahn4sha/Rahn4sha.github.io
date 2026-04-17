@@ -7,7 +7,12 @@
 }
 
 @media screen and (max-width:992px) {
-    
+    .description {
+        font-size: 16px;
+    }
+    .service-card h3{
+        font-size: 26px;
+    }
     /* skills */
     .skills-title::before {
         width: 200px;
@@ -66,7 +71,7 @@
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:576px) {
     #skills h3 {
         font-size: 17px;
     }
@@ -109,19 +114,16 @@
         overflow-x: hidden !important;
         position: relative;
     }
-    .description p{
-        font-size: 16px;
-    }
-    p {
-        font-size: 14px;
-    }
+   
+}
+@media screen and (max-width:425px) {
     .buttons a{
-        font-size: 16px;
+        font-size: 15px;
     }
     .btn{
-        font-size: 16px;
+        font-size: 15px;
     }
     .ftr-buttons a{
-        font-size: 16px;
+        font-size: 15px;
     }
 }
