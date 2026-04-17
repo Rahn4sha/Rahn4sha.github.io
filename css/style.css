@@ -159,7 +159,7 @@ header {
 }
 
 .description {
-   font-size: 17px;
+   font-size: 19px;
    font-weight: 400;
    max-width: 700px;
    margin: 0 auto;
@@ -177,7 +177,7 @@ header {
    background: rgb(233, 202, 179);
    color: black;
    border-radius: 15px;
-   font-size: 17px;
+   font-size: 18px;
    font-weight: 500;
    border: solid 2px rgb(233, 202, 179);
    transition: all 0.3s ease;
@@ -235,6 +235,7 @@ header {
 
 .highlight h6 {
    margin: 0;
+   font-size: 16px;
 }
 
 .content h2 {
@@ -245,7 +246,7 @@ header {
 }
 
 .content p {
-   font-size: 14px;
+   font-size: 16px;
    font-weight: 300;
    max-width: 700px;
    margin: 0 auto;
@@ -256,7 +257,7 @@ header {
    background: rgb(233, 202, 179);
    border: none;
    border-radius: 15px;
-   font-size: 17px;
+   font-size: 18px;
    font-weight: 500;
    margin-top: 25px;
    transition: 0.5s all;
@@ -281,7 +282,7 @@ header {
 }
 
 .service-head p {
-   font-size: 14px;
+   font-size: 16px;
    font-weight: 300;
    max-width: 700px;
    margin: 0 auto;
@@ -296,7 +297,7 @@ header {
 }
 
 .service-card p {
-   font-size: 14px;
+   font-size: 16px;
    font-weight: 300;
    max-width: 700px;
    margin: 0 auto;
@@ -363,7 +364,7 @@ header {
 .work-visit a {
    text-decoration: none;
    font-weight: 300;
-   font-size: 16px;
+   font-size: 18px;
    color: white;
    background: #9C5235;
    padding: 5px 25px;
@@ -388,7 +389,7 @@ header {
 }
 
 .skills-head p {
-   font-size: 14px;
+   font-size: 16px;
    font-weight: 300;
    display: flex;
    text-align: center;
@@ -530,7 +531,7 @@ header {
 }
 
 .contactbox p {
-   font-size: 14px;
+   font-size: 16px;
    font-weight: 300;
    color: rgba(255, 255, 255, 0.9);
    padding-top: 15px;
@@ -651,15 +652,15 @@ footer {
 
 footer h4 {
    font-family: "Cormorant Infant", serif;
-   font-size: 28px;
+   font-size: 30px;
    margin-top: 20px;
-   font-weight: 600;
+   font-weight: 700;
    letter-spacing: 0.5px;
 
 }
 
 .ftr-middle p {
-   font-size: 14px;
+   font-size: 16px;
    font-weight: 300;
    margin-top: 15px;
 
@@ -678,7 +679,7 @@ footer h4 {
    background: rgb(233, 202, 179);
    color: black;
    border-radius: 15px;
-   font-size: 19px;
+   font-size: 18px;
    font-weight: 500;
    border: solid 2px rgb(233, 202, 179);
    transition: all 0.3s ease;
@@ -746,6 +747,7 @@ footer h5 {
 
 .ftr-bottom p {
    margin-top: 20px;
+   font-size: 16px;
 }
 
 /* stickybuttons */
