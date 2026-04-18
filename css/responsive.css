@@ -69,9 +69,15 @@
     .tool {
         width: 44%;
     }
-
+    /* contactsection */
     .contactbox {
         padding: 20px 10px;
+    }
+    .contact-right{
+        padding-top: 30px;
+    }
+    #contact{
+        padding: 70px 0;
     }
 }
 
@@ -121,20 +127,19 @@
    
 }
 @media screen and (max-width: 425px) {
-    /* Buttons ore line-il fit aakkan (Button Fix) */
     .buttons {
         display: flex !important;
-        flex-direction: row !important; /* Row aayi thanne nirthan */
-        gap: 10px !important; /* Buttons thammilulla gap kurachu */
+        flex-direction: row !important;
+        gap: 10px !important; 
         width: 100% !important;
     }
 
     .buttons a {
-        flex: 1; /* Randu button-um ore width share cheyyan */
-        font-size: 14px !important; /* Font size kurachu */
-        padding: 12px 5px !important; /* Padding adjust cheythu */
+        flex: 1; 
+        font-size: 14px !important;
+        padding: 12px 5px !important;
         text-align: center;
-        white-space: nowrap; /* Text thazhekkirangilla */
+        white-space: nowrap;
         border-radius: 12px !important;
     }
 }
