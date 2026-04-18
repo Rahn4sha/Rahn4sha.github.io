@@ -148,6 +148,22 @@
         white-space: nowrap;
         border-radius: 12px !important;
     }
+
+    .ftr-buttons {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 10px !important;
+        width: 100% !important;
+    }
+
+    .ftr-buttons a {
+        flex: 1;
+        font-size: 14px !important;
+        padding: 12px 5px !important;
+        text-align: center;
+        white-space: nowrap;
+        border-radius: 12px !important;
+    }
 }
 
 @media screen and (max-width:393px) {
