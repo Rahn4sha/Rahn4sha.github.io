@@ -62,7 +62,20 @@
         padding: 0 !important;
     }
 }
-
+@media screen and (max-width:600px) {
+    /* skills */
+    .designtools img{
+        width: 60px;
+        height: 60px;
+    }
+    .tool img{
+        width: 60px;
+        height: 60px;
+    }
+    .tools{
+        gap: 15px;
+    }
+}
 @media screen and (max-width:768px) {
     .tools {
         flex-wrap: wrap;
