@@ -519,12 +519,29 @@
         AOS.init();
     </script>
     <script>
-        $(document).ready(function () {
-            $(".nav-toggle").click(function () {
-                $(this).toggleClass("toggle");
-                $(".nav2-mobile").toggleClass("menu");
-                $("header").toggleClass("remove-padding");
-            });
+        document.addEventListener("DOMContentLoaded", () => {
+            const navToggle = document.querySelector(".nav-toggle");
+            const navMobile = document.querySelector(".nav2-mobile");
+            const header = document.querySelector("header");
+            const navLinks = document.querySelectorAll(".nav-ul-mobile a");
+
+            if (navToggle && navMobile && header) {
+                // Toggle menu on hamburger click
+                navToggle.addEventListener("click", () => {
+                    navToggle.classList.toggle("toggle");
+                    navMobile.classList.toggle("menu");
+                    header.classList.toggle("remove-padding");
+                });
+
+                // Close menu when clicking a navigation link
+                navLinks.forEach(link => {
+                    link.addEventListener("click", () => {
+                        navToggle.classList.remove("toggle");
+                        navMobile.classList.remove("menu");
+                        header.classList.remove("remove-padding");
+                    });
+                });
+            }
         });
     </script>
 
